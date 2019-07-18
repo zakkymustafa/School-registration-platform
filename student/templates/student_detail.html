@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Detail|Student</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+       body{
+          width: 400px;
+          background-color: #eee;
+       }
+       img{
+        width:400px;
+        height: 200px;
+       }
+  </style>
+</head>
+<body>
+     <img src= {{student.image.url}} >
+<div class="table-responsive">
+<table class="table table-bordered">
+     <tr>
+          <td>First Name</td>
+          <td>{{student.first_name}}</td>
+     </tr>
+     <tr>
+           <td>Last Name</td>
+          <td>{{student.last_name}}</td>
+     </tr>
+     <tr>
+           <td>Date of Birth</td>
+       <td>{{student.date_of_birth}}</td>
+</tr>
+<tr>
+      <td>Place of residence</td>
+     <td>{{student.place_of_residence}}</td>
+</tr>
+<tr>
+      <td>Phone Number</td>
+     <td>{{student.phone_number}}</td>
+</tr>
+<tr>
+      <td>Email</td>
+     <td>{{student.Email}}</td>
+</tr>
+<tr>
+      <td>Guardian Phone</td>
+     <td>{{student.guardian_phone}}</td>
+</tr>
+<tr>
+     <td>Id Number</td>
+     <td>{{student.id_number}}</td>
+</tr>
+<tr>
+      <td>Courses</td>
+     <td>{{student.courses}}</td>
+</tr>
+<tr>
+      <td>Date Joined</td>
+     <td>{{student.date_joined}}</td>
+</tr>
+<tr>
+      <td>Registration Number</td>
+     <td>{{student.registration_number}}</td>
+</tr>
+</table>
+
+</body>
+</html>

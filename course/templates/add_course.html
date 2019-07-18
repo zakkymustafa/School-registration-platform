@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course|Registration</title>
+</head>
+<body style="width: 700px; margin: 0 auto; ">
+	<div style="background-color: #fff; padding: 0px 30px 30px 30px; border: solid; border-width: 50px; border-color: #CCABD8; border-radius: 65px 26px 60px 26px;-webkit-box-shadow: -6px -4px 63px 0px rgba(0,0,0,0.63);
+-moz-box-shadow: -6px -4px 63px 0px rgba(0,0,0,0.63);
+box-shadow: -6px -4px 63px 0px rgba(0,0,0,0.63);">
+	<h2 style="font-family: helvetica; font-size: 30px;padding-left: 50px;">Course Registration</h2>
+	<form method="POST" style="background-color: #F6EEFD; padding: 20px;-webkit-box-shadow: -1px 3px 36px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 3px 36px -7px rgba(0,0,0,0.75);
+box-shadow: -1px 3px 36px -7px rgba(0,0,0,0.75); border-radius: 65px 26px 60px 26px; font-family: helvetica; font-size: 20px;">{% csrf_token %}
+        {{form.as_p}}
+
+        <button type="submit" style="margin-left: 190px;">SUBMIT</button>
+		
+	</form>
+		
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Detail|Student</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+       body{
+          width: 400px;
+          background-color: #eee;
+       }
+  </style>
+</head>
+<body>
+  <h2>Course Details</h2>
+     <img src= {{student.image.url}} >
+<div class="table-responsive">
+<table class="table table-bordered">
+     <tr>
+          <td>Name</td>
+          <td>{{course.name}}</td>
+     </tr>
+     <tr>
+           <td>Description</td>
+          <td> {{course.description}}</td>
+     </tr>
+     <tr>
+           <td>Duration</td>
+       <td>{{course.duration_in_months}}</td>
+</tr>
+<tr>
+      <td>Course Number</td>
+     <td>{{course.Course_number}}</td>
+</tr>
+<tr>
+      <td>Teacher</td>
+     <td>{{course.teacher}}</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+
+
+
+
+

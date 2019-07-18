@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List|Courses</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<button type="submit" style="margin-top: 20px; margin-left: 20px;"><a href="/course/add/">submit</a></button>
+	<div class="Container">
+		<h1>LIST OF COURSES</h1>
+	<div class="table-responsive">
+     <table class="table">
+		<tbody>
+		<tr>
+			<th>Name</th>
+			<th>Duration in months</th>
+			<th>Teacher</th>
+			<th>Description</th>
+		</tr>
+
+		{% for course in courses %}
+		<tr>
+			<td>{{course.name}}</td>
+			<td>{{course.duration_in_months}}</td>
+			<td>{{course.teacher}}</td>
+			<td>{{course.description}}</td>
+			<td><a href="/course/detail/{{course.pk}}">More details</a></td>
+			<td><a href="/course/edit/{{course.pk}}">Edit details</a></td>
+		</tr>
+		{% endfor %}
+	</tbody>
+	</table>
+</div>
+</div>
+</body>
+</html>

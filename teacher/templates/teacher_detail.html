@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Detail|Teacher</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+       body{
+          width: 400px;
+          background-color: #eee;
+       }
+
+       
+  </style>
+</head>
+<body>
+	<h2>TEACHER DETAILS</h2>
+
+<div class="table-responsive">
+<table class="table table-bordered">
+     <tr>
+          <td>First Name</td>
+          <td>{{teacher.first_name}}</td>
+     </tr>
+     <tr>
+           <td>Last Name</td>
+          <td>{{teacher.last_name}}</td>
+     </tr>
+     
+<tr>
+      <td>Place of residence</td>
+     <td>{{teacher.place_of_residence}}</td>
+</tr>
+<tr>
+      <td>Phone Number</td>
+     <td>{{teacher.phone_number}}</td>
+</tr>
+<tr>
+      <td>Email</td>
+     <td>{{student.Email}}</td>
+</tr>
+
+<tr>
+     <td>Id Number</td>
+     <td>{{student.id_number}}</td>
+</tr>
+<tr>
+      <td>Profession</td>
+     <td>{{teacher.profession}}</td>
+</tr>
+<tr>
+      <td>Date Joined</td>
+     <td>{{student.date_joined}}</td>
+</tr>
+<tr>
+      <td>Registration Number</td>
+     <td>{{student.registration_number}}</td>
+</tr>
+</table>
+
+</body>
+</html>

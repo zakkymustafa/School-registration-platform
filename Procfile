@@ -1,0 +1,1 @@
+web: gunicorn akirachix.wsgi --log-file -

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List|Teachers</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <button type="submit" style="margin-top: 20px; margin-left: 20px;"><a href="/teacher/add/">submit</a></button>
+	<div class="Container">
+		<h1>LIST OF TEACHERS</h1>
+	<div class="table-responsive"> 
+	<table class="table">
+		<tbody>
+		<tr>
+			<th>First Name</th>
+			<th>Surname</th>
+			<th>profession</th>
+			<th>place_of_residence</th>
+			<th>phone_number</th>
+			<th>date_joined</th>
+			<th>Registration Number</th>
+			<th>Email</th>
+		</tr>
+		{% for teacher in teachers %}
+		<tr>/
+			<td>{{teacher.first_name}}</td>
+			<td>{{teacher.last_name}}</td>
+			<td>{{teacher.profession}}</td>
+			<td>{{teacher.place_of_residence}}</td>
+			<td>{{teacher.phone_number}}</td>
+			<td>{{teacher.date_joined}}</td>
+			<td>{{teacher.registration_number}}</td>
+			<td>{{teacher.Email}}</td>
+			<td><a href="/teacher/detail/{{teacher.pk}}/">More details</a></td>
+			<td><a href="/teacher/edit/{{teacher.pk}}/">Edit details</a></td>
+		</tr>
+		{% endfor %}
+	</tbody>
+	</table>
+</div>
+
+</body>
+</html>
