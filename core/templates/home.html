@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KARIBU</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-primary" style="background-color: #e3f2fd; height: 50px;">
+    <div style="padding: 0px 0px 0px 150px">
+     <a href="teacher/add" style="color: white">Teacher</a>
+   </div>
+   <div style="padding: 0px 150px 0px 0px">
+     <a href="/student/add" style="color: white">Student</a>
+    </div> 
+<!--      <a href="/course/add">Course</a> -->
+
+</nav>
+  
+  {% if user.is_authenticated %}
+     welcome {{user.username}}
+     <a href="/accounts/logout">Logout</a>
+  {% else %}
+     <!-- <p>Welcome guest
+     please <a href="/accounts/register">Register</a>
+     or <a href="/accounts/login">Login</a></p> -->
+ 
+
+<div style="padding: 0px 50px 0px 50px;">
+
+<div class="card" style="width: 18rem; float: right; -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);">
+  <div class="card-body">
+    <h5 class="card-title">Welcome Student</h5>
+    <p class="card-text">Please provide your information to register and access the courses 24/7 with world class tutors.</p>
+    <p>These are the courses we offer:</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Software Engineering</li>
+    <li class="list-group-item">Machine Learning</li>
+    <li class="list-group-item">Data Science</li>
+    <li class="list-group-item">Robotics</li>
+    <li class="list-group-item">DevOps</li>
+    <li class="list-group-item">Artificial Intelligence</li>
+  </ul>
+  <div class="card-body">
+    <a href="/accounts/register" class="card-link">Register</a>
+    or<a href="/accounts/login" class="card-link">Login</a>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem; float: left; -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);">
+  <div class="card-body">
+    <h5 class="card-title">Welcome Teacher</h5>
+    <p class="card-text">Please provide your information to register and become world class tutor.</p>
+    <p>Are you Excellent in one of the following courses and you would like to teach?</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Software Engineering</li>
+    <li class="list-group-item">Machine Learning</li>
+    <li class="list-group-item">Data Science</li>
+    <li class="list-group-item">Robotics</li>
+    <li class="list-group-item">DevOps</li>
+    <li class="list-group-item">Artificial Intelligence</li>
+  </ul>
+  <div class="card-body">
+    <a href="/accounts/register" class="card-link">Register</a>
+    or<a href="/accounts/login" class="card-link">Login</a>
+  </div>
+</div>
+
+</div>
+{% endif %}
+
+
+
+  </style>    
+</body>
+</html>
+
